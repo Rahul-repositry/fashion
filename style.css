@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital@1&family=Poiret+One&display=swap');
+
+
+
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+
+}
+
+
+/* L   A  N  D    I   N  G */
+
+.toggle {
+    position: relative;
+    width: 74px;
+    height: 53px;
+    background: rgb(243 243 243 / 84%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    top: 17px;
+    z-index: 2;
+    left: 20px;
+}
+    .toggle span {
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        background: rgb(95 95 96);
+        border-radius: 4px;
+        transition: all 0.5s ease 0s;
+    }
+.toggle span:nth-child(1) { 
+    transform: translateY(-15px);
+     width: 25px;
+      left: 15px;
+     }
+.toggle.active span:nth-child(1) {
+    width: 40px;
+    transform: translateY(-2px) rotate(45deg);
+    transition-delay: 0.125s;
+}
+.toggle span:nth-child(2) { 
+    transform: translateY(15px);
+     width: 15px; left: 15px;
+     }
+.toggle.active span:nth-child(2) {
+    width: 40px;
+    transform: translateY(-3px) rotate(315deg);
+    transition-delay: 0.25s;
+}
+.toggle.active span:nth-child(3) { 
+    transform: translateX(60px);
+ }
+.brand{
+    position: absolute;
+    height: 90px;
+    width: 100vw;
+    background: rgb(41, 40, 40);
+    font-family: 'Philosopher';
+    color: white;
+    letter-spacing: 35px;
+    /* text-align: center; */
+    font-size: 70px;
+}
+
+.landing{
+    position: relative;
+    height: 115vh;
+    width: 100vw;
+    background: #ffffff;
+    overflow: hidden;
+    top: -53px;
+}
+.brand span {
+    position: absolute;
+    left: 558px;
+    align-self: center;
+}
+.men{
+    position: absolute;
+    height: 50px;
+    width: 100vw;
+    top: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 61px;
+    z-index: 1;
+    /* grid-column-start: initial; */
+}
+.m{
+    background: rgb(223 223 223);
+    font-size: 26px;
+    font-family: 'Rajdhani';
+    color: #0e0e0e;
+    text-align: center;
+    letter-spacing: 9px;
+    line-height: 49px;
+}
+
+.m.mandw4 {
+    margin-right: 57px;
+}
+
+.m.mandw1 {margin-left: 56px;}
+
+.vedio{
+    position: absolute;
+    height: 700px;
+    width: 100vw;
+    top: 141px;
+}
+.v{
+    position: absolute;
+
+}
+
+
+span.v.text3 {
+    position: absolute;
+    height: 2px;
+    width: 699px;
+    z-index: 2;
+    left: 369px;
+    top: 60%;
+    background: linear-gradient(to right,transparent,#ffffff75, transparent);
+}
+
+
+.v.text2{
+    position: absolute;
+    font-size: 68px;
+    color: #ffffffad;
+    top: 45%;
+    z-index: 1;
+    /* font-family: 'Philosopher', sans-serif; */
+    font-family: 'Poiret One', cursive;
+    left: 35%;
+}
+video{
+    position: absolute;
+    height: 700px;
+    width: 100vw;
+    
+}
+
+/* M  O   D   E   L   S */
+
+.male{
+    position:absolute;
+    height: 600px;
+    width: 400px;
+    background: url(coat.jpeg)center center/cover;
+    top: 55rem;
+    left:0px;
+}
+
+.male::after {content: '';position: absolute;height: 80px;width: 80px;background: white;transform: rotate(45deg);top: 50%;right: -41px;}
+
+.female{
+    position:absolute;
+    height: 600px;
+    width: 400px;
+    background: url(white.jpeg)center center/cover;
+    top: 55rem;
+    right:0px;
+}
+
+.female::before {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background: white;
+    transform: rotate(45deg);
+    top: 50%;
+    left: -41px;
+}
+
+.f{
+    position: absolute;
+    
+}
+
+span.f.text4 {
+    top: 1417px;
+    width: 280px;
+    left: 592px;
+    font-size: 33px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Rajdhani';
+}
+
+span.f.text3 {
+    top: 1306px;
+    width: 280px;
+    left: 599px;
+    font-size: 21px;
+    text-align: center;
+    font-family: 'Rajdhani';
+    letter-spacing: 2px;
+}
+
+span.f.text1 {
+    top: 992px;
+    width: 474px;
+    left: 498px;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 7px;
+}
+
+span.f.text2 {
+    top: 1041px;
+    width: 474px;
+    left: 498px;
+    font-size: 69px;
+    text-align: center;
+    line-height: 74px;
+    letter-spacing: 7px;
+}
+
+
+/* F   U   R    R    Y        C   O    A   T */
+
+
+.trending{
+    position: absolute;
+    top: 100rem;
+    font-size: 88px;
+    left: 275px;
+    letter-spacing: 6px;
+    font-family: 'Philosopher';
+}
+
+span.trending::before {content: '';position: absolute;height: 2px;width: 899px;z-index: 2;left: 6px;top: -60%;background: linear-gradient(to right,transparent,black, transparent);}
+.fab{
+    position: absolute;
+    height: 500px;
+    width: 698px;
+    left: 11px;
+    top: 109rem;
+    background: url(fab.jpeg)center center /cover;
+}
+
+.fabi{
+    position: absolute;
+}
+
+span.fabi.text6 {
+    top: 2120px;
+    width: 280px;
+    right: 209px;
+    font-size: 33px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Rajdhani';
+}
+
+span.fabi.text4 {
+    position: absolute;
+    height: 2px;
+    width: 599px;
+    z-index: 2;
+    right: 49px;
+    top: 2098px;
+    background: linear-gradient(to right,transparent,black, transparent);
+}
+
+span.fabi.text3 {
+    position: absolute;
+    height: 2px;
+    width: 399px;
+    z-index: 2;
+    right: 154px;
+    top: 2078px;
+    background: linear-gradient(to right,transparent,black, transparent);
+}
+
+span.fabi.text2 {
+    top: 1831px;
+    width: 465px;
+    left: 863px;
+    font-size: 69px;
+    text-align: center;
+    line-height: 74px;
+    letter-spacing: 7px;
+}
+
+span.fabi.text1 {
+    top: 1785px;
+    width: 580px;
+    left: 803px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Poiret One';
+}
+
+.bhalu{
+    position: absolute;
+    height: 623px;
+    width: 558px;
+    top: 137rem;
+    right: 70px;
+    background: url(b.jpeg)center center/cover;
+}
+.b{
+    position: absolute;
+}
+
+span.b.text6 {
+    top: 2712px;
+    width: 280px;
+    left: 189px;
+    font-size: 33px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Rajdhani';
+}
+
+span.b.text4 {
+    position: absolute;
+    height: 2px;
+    width: 599px;
+    z-index: 2;
+    left: 49px;
+    top: 2675px;
+    background: linear-gradient(to right,transparent,black, transparent);
+}
+
+span.b.text3 {
+    position: absolute;
+    height: 2px;
+    width: 399px;
+    z-index: 2;
+    left: 139px;
+    top: 2642px;
+    background: linear-gradient(to right,transparent,black, transparent);
+}
+
+span.b.text2 {
+    top: 2385px;
+    width: 465px;
+    right: 863px;
+    font-size: 69px;
+    text-align: center;
+    line-height: 74px;
+    letter-spacing: 7px;
+}
+
+span.b.text1 {
+    top: 2320px;
+    width: 580px;
+    right: 803px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Poiret One';
+}
+
+
+/* W   H  O   L    E          B   U    N   C  H */
+
+.grab{
+    position: absolute;
+    top: 189rem;
+    left: 431px;
+    font-size: 88px;
+    font-family: 'Philosopher';
+}
+
+span.grab::before {
+    /* position: absolute; */
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 1399px;
+    z-index: 2;
+    left: -426px;
+    top: -80px;
+    background: linear-gradient(to right,transparent,black, transparent);
+}
+.sale{
+    position: absolute;
+    top: 200rem;
+    left: 0px;
+    height: 600px;
+    width: 450px;
+    background: url(whitee.png)center center/cover;
+}
+
+.denim{
+    position: absolute;
+    top: 200rem;
+    height: 357px;
+    width: 321px;
+    background: url(denim.jpeg)center center/cover;
+    left: 493px;
+}
+
+.denim span {
+    position: absolute;
+    transform: rotate(90deg);
+    font-size: 62px;
+    font-family: 'Poiret One';
+    letter-spacing: 4px;
+    left: 271px;
+    top: 147px;
+}
+
+.nike{
+    position: absolute;
+    top: 223rem;
+    height: 229px;
+    width: 343px;
+    background: url(Nike.jpeg)center center/cover;
+    left: 638px;
+}
+
+.nike span {
+    position: absolute;
+    transform: rotate(-90deg);
+    font-size: 34px;
+    top: 106px;
+    font-family: 'Poiret One';
+    letter-spacing: 4px;
+    font-weight: bold;
+    left: -131px;
+}
+.pent{
+    position: absolute;
+    top: 202rem;
+    height: 512px;
+    width: 407px;
+    background: url(pent.jpeg)center center/cover;
+    right: 20px;
+}
+
+.pent span {
+    position: absolute;
+    font-size: 44px;
+    bottom: -53px;
+    font-family: 'Poiret One';
+    letter-spacing: 4px;
+    font-weight: bold;
+    left: 117px;
+}
+
+
+
